@@ -12,6 +12,6 @@ with open("../resources/UnicodeLongNames.csv") as csvfile:
     next(csvreader)
     for hexcode, mma in csvreader:
         uni = "\\u" + hexcode[2:]
-        print(f'    "\\{mma}": "{uni}"')
+        print(f'    "\\{mma}": "{uni}",')
         pass
     print("}")
