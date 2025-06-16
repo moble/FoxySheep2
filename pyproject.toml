@@ -32,11 +32,13 @@ foxy-sheep = "FoxySheep.__main__:main"
 
 [project.optional-dependencies]
 test = [
+  "numpy",
   "pytest",
   "requests>=0.8.8",
   "mock>=1.0.1"
 ]
 dev = [
+  "numpy",
   "pytest",
   "tox>=4",
   "flake8"
