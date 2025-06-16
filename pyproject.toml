@@ -17,7 +17,8 @@ classifiers = [
   "Operating System :: OS Independent"
 ]
 dependencies = [
-  "antlr4-python3-runtime>=4.7,<4.8",
+  # ANTLR specifies that it breaks semver; suggests only patch equivalence, so we restrict as
+  "antlr4-python3-runtime>=4.13,<4.14",
   "click>=7.1.2",
   "astor",
   "PyYAML",

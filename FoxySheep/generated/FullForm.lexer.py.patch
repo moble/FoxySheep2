@@ -10,12 +10,12 @@
 +
 +from FoxySheep.lexer_base import LexerBase
 +
- # Generated from FullForm.g4 by ANTLR 4.7.2
+ # Generated from FullForm.g4 by ANTLR 4.13.2
 -from antlr4 import *
 +from antlr4 import ATNDeserializer, DFA, LexerATNSimulator, PredictionContextCache
  from io import StringIO
- from typing.io import TextIO
  import sys
+ if sys.version_info[1] > 5:
 @@ -146,6 +155,6 @@
          return buf.getvalue()
 

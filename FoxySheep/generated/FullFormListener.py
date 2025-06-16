@@ -1,6 +1,6 @@
-# Generated from FullForm.g4 by ANTLR 4.7.2
+# Generated from FullForm.g4 by ANTLR 4.13.2
 from antlr4 import *
-if __name__ is not None and "." in __name__:
+if "." in __name__:
     from .FullFormParser import FullFormParser
 else:
     from FullFormParser import FullFormParser
@@ -125,3 +125,5 @@ class FullFormListener(ParseTreeListener):
         pass
 
 
+
+del FullFormParser

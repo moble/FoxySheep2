@@ -7,10 +7,10 @@
 import sys
 
 from antlr4 import Lexer
-from FoxySheep.generated.InputFormParser import InputFormParser
 
 
 class LexerBase(Lexer):
+    from FoxySheep.generated.InputFormParser import InputFormParser
     def __init__(self, input_, output=sys.stdout):
         super(LexerBase, self).__init__(input_, output=output)
         self.bracketLevel = 0
