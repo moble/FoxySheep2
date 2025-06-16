@@ -12,12 +12,12 @@
 +from FoxySheep.lexer_base import LexerBase
 +from FoxySheep.generated.InputFormParser import PredictionContextCache, InputFormParser
 +
- # Generated from InputForm.g4 by ANTLR 4.7.2
+ # Generated from InputForm.g4 by ANTLR 4.13.2
 -from antlr4 import *
 +from antlr4 import ATNDeserializer, DFA, LexerATNSimulator
  from io import StringIO
- from typing.io import TextIO
  import sys
+ if sys.version_info[1] > 5:
 @@ -534,6 +545,6 @@
          return buf.getvalue()
 

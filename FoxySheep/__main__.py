@@ -16,7 +16,7 @@ from FoxySheep.parser import (
 from FoxySheep.emitter.python import input_form_to_python
 from FoxySheep.emitter.full_form import input_form_to_full_form
 from FoxySheep.tree.pretty_printer import pretty_print
-from FoxySheep.version import VERSION as __version__
+from FoxySheep.version import __version__
 
 
 # TODO: we could put this in a class and then one could have many REPLs.

@@ -1,16 +1,5 @@
-# encoding: utf-8
-# In order for the generated lexer to subclass our lexer base class, we
-# have to patch the generated lexer using InputFormLexer.py.patch
-#
-# This is applied in the top-level Makefile. However to apply by hand run:
-#    patch < InputFormLexer.py.patch
-
-from antlr4.ParserRuleContext import RuleContext
-from FoxySheep.lexer_base import LexerBase
-from FoxySheep.generated.InputFormParser import PredictionContextCache, InputFormParser
-
-# Generated from InputForm.g4 by ANTLR 4.13.2
-from antlr4 import ATNDeserializer, DFA, LexerATNSimulator
+# Generated from grammar/InputForm.g4 by ANTLR 4.13.2
+from antlr4 import *
 from io import StringIO
 import sys
 if sys.version_info[1] > 5:
@@ -712,7 +701,7 @@ def serializedATN():
         20,1,193,21,1,194,22,1,212,23
     ]
 
-class InputFormLexer(LexerBase):
+class InputFormLexer(Lexer):
 
     atn = ATNDeserializer().deserialize(serializedATN())
 

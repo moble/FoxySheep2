@@ -1,10 +1,5 @@
 lexer grammar InputFormLexerRules;
 
-options{
-	//We put target-language dependent code in a base class.
-	superClass=LexerBase;
-}
-
 tokens {BINARYPLUS, BINARYMINUS, BINARYMINUSPLUS, BINARYPLUSMINUS, SPANSEMICOLONS}
 
 // LEXER RULES

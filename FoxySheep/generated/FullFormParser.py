@@ -1,53 +1,55 @@
-# Generated from FullForm.g4 by ANTLR 4.7.2
+# Generated from FullForm.g4 by ANTLR 4.13.2
 # encoding: utf-8
 from antlr4 import *
 from io import StringIO
-from typing.io import TextIO
 import sys
+if sys.version_info[1] > 5:
+	from typing import TextIO
+else:
+	from typing.io import TextIO
 
 def serializedATN():
-    with StringIO() as buf:
-        buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\'")
-        buf.write("r\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\4\b")
-        buf.write("\t\b\4\t\t\t\3\2\3\2\6\2\25\n\2\r\2\16\2\26\3\2\5\2\32")
-        buf.write("\n\2\7\2\34\n\2\f\2\16\2\37\13\2\3\3\3\3\3\3\3\3\5\3%")
-        buf.write("\n\3\3\3\3\3\3\3\3\3\3\3\7\3,\n\3\f\3\16\3/\13\3\3\4\5")
-        buf.write("\4\62\n\4\3\4\3\4\5\4\66\n\4\7\48\n\4\f\4\16\4;\13\4\3")
-        buf.write("\5\5\5>\n\5\3\5\3\5\3\6\5\6C\n\6\3\6\3\6\3\6\3\6\3\6\3")
-        buf.write("\6\5\6K\n\6\3\7\5\7N\n\7\3\7\3\7\3\7\5\7S\n\7\3\7\5\7")
-        buf.write("V\n\7\3\7\5\7Y\n\7\3\7\3\7\5\7]\n\7\3\7\5\7`\n\7\5\7b")
-        buf.write("\n\7\3\b\3\b\3\b\3\b\5\bh\n\b\5\bj\n\b\3\t\3\t\5\tn\n")
-        buf.write("\t\3\t\3\t\3\t\2\3\4\n\2\4\6\b\n\f\16\20\2\4\4\2\20\20")
-        buf.write("\22\22\3\2\24\25\2\177\2\22\3\2\2\2\4$\3\2\2\2\6\61\3")
-        buf.write("\2\2\2\b=\3\2\2\2\nJ\3\2\2\2\fa\3\2\2\2\16i\3\2\2\2\20")
-        buf.write("k\3\2\2\2\22\35\5\4\3\2\23\25\7%\2\2\24\23\3\2\2\2\25")
-        buf.write("\26\3\2\2\2\26\24\3\2\2\2\26\27\3\2\2\2\27\31\3\2\2\2")
-        buf.write("\30\32\5\4\3\2\31\30\3\2\2\2\31\32\3\2\2\2\32\34\3\2\2")
-        buf.write("\2\33\24\3\2\2\2\34\37\3\2\2\2\35\33\3\2\2\2\35\36\3\2")
-        buf.write("\2\2\36\3\3\2\2\2\37\35\3\2\2\2 !\b\3\1\2!%\5\f\7\2\"")
-        buf.write("%\7\23\2\2#%\5\b\5\2$ \3\2\2\2$\"\3\2\2\2$#\3\2\2\2%-")
-        buf.write("\3\2\2\2&\'\f\3\2\2\'(\7\27\2\2()\5\6\4\2)*\7\30\2\2*")
-        buf.write(",\3\2\2\2+&\3\2\2\2,/\3\2\2\2-+\3\2\2\2-.\3\2\2\2.\5\3")
-        buf.write("\2\2\2/-\3\2\2\2\60\62\5\4\3\2\61\60\3\2\2\2\61\62\3\2")
-        buf.write("\2\2\629\3\2\2\2\63\65\7\31\2\2\64\66\5\4\3\2\65\64\3")
-        buf.write("\2\2\2\65\66\3\2\2\2\668\3\2\2\2\67\63\3\2\2\28;\3\2\2")
-        buf.write("\29\67\3\2\2\29:\3\2\2\2:\7\3\2\2\2;9\3\2\2\2<>\5\n\6")
-        buf.write("\2=<\3\2\2\2=>\3\2\2\2>?\3\2\2\2?@\7\3\2\2@\t\3\2\2\2")
-        buf.write("AC\7\35\2\2BA\3\2\2\2BC\3\2\2\2CD\3\2\2\2DE\7\3\2\2EK")
-        buf.write("\7\35\2\2FG\7\3\2\2GH\7\35\2\2HI\7\3\2\2IK\7\35\2\2JB")
-        buf.write("\3\2\2\2JF\3\2\2\2K\13\3\2\2\2LN\7\25\2\2ML\3\2\2\2MN")
-        buf.write("\3\2\2\2NO\3\2\2\2OP\7\22\2\2PR\7\21\2\2QS\5\16\b\2RQ")
-        buf.write("\3\2\2\2RS\3\2\2\2SU\3\2\2\2TV\5\20\t\2UT\3\2\2\2UV\3")
-        buf.write("\2\2\2Vb\3\2\2\2WY\7\25\2\2XW\3\2\2\2XY\3\2\2\2YZ\3\2")
-        buf.write("\2\2Z\\\t\2\2\2[]\5\16\b\2\\[\3\2\2\2\\]\3\2\2\2]_\3\2")
-        buf.write("\2\2^`\5\20\t\2_^\3\2\2\2_`\3\2\2\2`b\3\2\2\2aM\3\2\2")
-        buf.write("\2aX\3\2\2\2b\r\3\2\2\2cd\7\34\2\2dj\t\2\2\2eg\7\35\2")
-        buf.write("\2fh\t\2\2\2gf\3\2\2\2gh\3\2\2\2hj\3\2\2\2ic\3\2\2\2i")
-        buf.write("e\3\2\2\2j\17\3\2\2\2km\7#\2\2ln\t\3\2\2ml\3\2\2\2mn\3")
-        buf.write("\2\2\2no\3\2\2\2op\7\22\2\2p\21\3\2\2\2\27\26\31\35$-")
-        buf.write("\61\659=BJMRUX\\_agim")
-        return buf.getvalue()
-
+    return [
+        4,1,37,112,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
+        6,2,7,7,7,1,0,1,0,4,0,19,8,0,11,0,12,0,20,1,0,3,0,24,8,0,5,0,26,
+        8,0,10,0,12,0,29,9,0,1,1,1,1,1,1,1,1,3,1,35,8,1,1,1,1,1,1,1,1,1,
+        1,1,5,1,42,8,1,10,1,12,1,45,9,1,1,2,3,2,48,8,2,1,2,1,2,3,2,52,8,
+        2,5,2,54,8,2,10,2,12,2,57,9,2,1,3,3,3,60,8,3,1,3,1,3,1,4,3,4,65,
+        8,4,1,4,1,4,1,4,1,4,1,4,1,4,3,4,73,8,4,1,5,3,5,76,8,5,1,5,1,5,1,
+        5,3,5,81,8,5,1,5,3,5,84,8,5,1,5,3,5,87,8,5,1,5,1,5,3,5,91,8,5,1,
+        5,3,5,94,8,5,3,5,96,8,5,1,6,1,6,1,6,1,6,3,6,102,8,6,3,6,104,8,6,
+        1,7,1,7,3,7,108,8,7,1,7,1,7,1,7,0,1,2,8,0,2,4,6,8,10,12,14,0,2,2,
+        0,14,14,16,16,1,0,18,19,125,0,16,1,0,0,0,2,34,1,0,0,0,4,47,1,0,0,
+        0,6,59,1,0,0,0,8,72,1,0,0,0,10,95,1,0,0,0,12,103,1,0,0,0,14,105,
+        1,0,0,0,16,27,3,2,1,0,17,19,5,35,0,0,18,17,1,0,0,0,19,20,1,0,0,0,
+        20,18,1,0,0,0,20,21,1,0,0,0,21,23,1,0,0,0,22,24,3,2,1,0,23,22,1,
+        0,0,0,23,24,1,0,0,0,24,26,1,0,0,0,25,18,1,0,0,0,26,29,1,0,0,0,27,
+        25,1,0,0,0,27,28,1,0,0,0,28,1,1,0,0,0,29,27,1,0,0,0,30,31,6,1,-1,
+        0,31,35,3,10,5,0,32,35,5,17,0,0,33,35,3,6,3,0,34,30,1,0,0,0,34,32,
+        1,0,0,0,34,33,1,0,0,0,35,43,1,0,0,0,36,37,10,1,0,0,37,38,5,21,0,
+        0,38,39,3,4,2,0,39,40,5,22,0,0,40,42,1,0,0,0,41,36,1,0,0,0,42,45,
+        1,0,0,0,43,41,1,0,0,0,43,44,1,0,0,0,44,3,1,0,0,0,45,43,1,0,0,0,46,
+        48,3,2,1,0,47,46,1,0,0,0,47,48,1,0,0,0,48,55,1,0,0,0,49,51,5,23,
+        0,0,50,52,3,2,1,0,51,50,1,0,0,0,51,52,1,0,0,0,52,54,1,0,0,0,53,49,
+        1,0,0,0,54,57,1,0,0,0,55,53,1,0,0,0,55,56,1,0,0,0,56,5,1,0,0,0,57,
+        55,1,0,0,0,58,60,3,8,4,0,59,58,1,0,0,0,59,60,1,0,0,0,60,61,1,0,0,
+        0,61,62,5,1,0,0,62,7,1,0,0,0,63,65,5,27,0,0,64,63,1,0,0,0,64,65,
+        1,0,0,0,65,66,1,0,0,0,66,67,5,1,0,0,67,73,5,27,0,0,68,69,5,1,0,0,
+        69,70,5,27,0,0,70,71,5,1,0,0,71,73,5,27,0,0,72,64,1,0,0,0,72,68,
+        1,0,0,0,73,9,1,0,0,0,74,76,5,19,0,0,75,74,1,0,0,0,75,76,1,0,0,0,
+        76,77,1,0,0,0,77,78,5,16,0,0,78,80,5,15,0,0,79,81,3,12,6,0,80,79,
+        1,0,0,0,80,81,1,0,0,0,81,83,1,0,0,0,82,84,3,14,7,0,83,82,1,0,0,0,
+        83,84,1,0,0,0,84,96,1,0,0,0,85,87,5,19,0,0,86,85,1,0,0,0,86,87,1,
+        0,0,0,87,88,1,0,0,0,88,90,7,0,0,0,89,91,3,12,6,0,90,89,1,0,0,0,90,
+        91,1,0,0,0,91,93,1,0,0,0,92,94,3,14,7,0,93,92,1,0,0,0,93,94,1,0,
+        0,0,94,96,1,0,0,0,95,75,1,0,0,0,95,86,1,0,0,0,96,11,1,0,0,0,97,98,
+        5,26,0,0,98,104,7,0,0,0,99,101,5,27,0,0,100,102,7,0,0,0,101,100,
+        1,0,0,0,101,102,1,0,0,0,102,104,1,0,0,0,103,97,1,0,0,0,103,99,1,
+        0,0,0,104,13,1,0,0,0,105,107,5,33,0,0,106,108,7,1,0,0,107,106,1,
+        0,0,0,107,108,1,0,0,0,108,109,1,0,0,0,109,110,5,16,0,0,110,15,1,
+        0,0,0,21,20,23,27,34,43,47,51,55,59,64,72,75,80,83,86,90,93,95,101,
+        103,107
+    ]
 
 class FullFormParser ( Parser ):
 
@@ -66,7 +68,7 @@ class FullFormParser ( Parser ):
                      "<INVALID>", "<INVALID>", "'+'", "'-'", "<INVALID>", 
                      "'['", "']'", "','", "'(*'", "'*)'", "'``'", "'`'", 
                      "'''", "'\"'", "':'", "'\\'", "'^^'", "'*^'", "'.'", 
-                     "'\n'", "'\uF3B1'" ]
+                     "'\\n'", "'\\uF3B1'" ]
 
     symbolicNames = [ "<INVALID>", "Name", "LetterName", "LetterInner", 
                       "GreekLetterInner", "LowerCaseGreekInner", "UpperCaseGreekInner", 
@@ -132,13 +134,15 @@ class FullFormParser ( Parser ):
 
     def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
         super().__init__(input, output)
-        self.checkVersion("4.7.2")
+        self.checkVersion("4.13.2")
         self._interp = ParserATNSimulator(self, self.atn, self.decisionsToDFA, self.sharedContextCache)
         self._predicates = None
 
 
 
+
     class ProgContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -189,7 +193,7 @@ class FullFormParser ( Parser ):
             self.state = 27
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la==FullFormParser.NEWLINE:
+            while _la==35:
                 self.state = 18 
                 self._errHandler.sync(self)
                 _alt = 1
@@ -207,7 +211,7 @@ class FullFormParser ( Parser ):
                 self.state = 23
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << FullFormParser.Name) | (1 << FullFormParser.DecimalNumber) | (1 << FullFormParser.DIGITS) | (1 << FullFormParser.StringLiteral) | (1 << FullFormParser.MINUS) | (1 << FullFormParser.BACKQUOTE))) != 0):
+                if (((_la) & ~0x3f) == 0 and ((1 << _la) & 134955010) != 0):
                     self.state = 22
                     self.expr(0)
 
@@ -224,7 +228,9 @@ class FullFormParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class ExprContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -358,7 +364,7 @@ class FullFormParser ( Parser ):
             self.state = 34
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [FullFormParser.DecimalNumber, FullFormParser.DIGITS, FullFormParser.MINUS]:
+            if token in [14, 16, 19]:
                 localctx = FullFormParser.NumberContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
@@ -366,14 +372,14 @@ class FullFormParser ( Parser ):
                 self.state = 31
                 self.numberLiteral()
                 pass
-            elif token in [FullFormParser.StringLiteral]:
+            elif token in [17]:
                 localctx = FullFormParser.StringLiteralContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
                 self.state = 32
                 self.match(FullFormParser.StringLiteral)
                 pass
-            elif token in [FullFormParser.Name, FullFormParser.BACKQUOTE]:
+            elif token in [1, 27]:
                 localctx = FullFormParser.SymbolLiteralContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
@@ -416,7 +422,9 @@ class FullFormParser ( Parser ):
             self.unrollRecursionContexts(_parentctx)
         return localctx
 
+
     class ExpressionListContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -477,7 +485,7 @@ class FullFormParser ( Parser ):
             self.state = 47
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << FullFormParser.Name) | (1 << FullFormParser.DecimalNumber) | (1 << FullFormParser.DIGITS) | (1 << FullFormParser.StringLiteral) | (1 << FullFormParser.MINUS) | (1 << FullFormParser.BACKQUOTE))) != 0):
+            if (((_la) & ~0x3f) == 0 and ((1 << _la) & 134955010) != 0):
                 self.state = 46
                 self.expr(0)
 
@@ -485,13 +493,13 @@ class FullFormParser ( Parser ):
             self.state = 55
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la==FullFormParser.COMMA:
+            while _la==23:
                 self.state = 49
                 self.match(FullFormParser.COMMA)
                 self.state = 51
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << FullFormParser.Name) | (1 << FullFormParser.DecimalNumber) | (1 << FullFormParser.DIGITS) | (1 << FullFormParser.StringLiteral) | (1 << FullFormParser.MINUS) | (1 << FullFormParser.BACKQUOTE))) != 0):
+                if (((_la) & ~0x3f) == 0 and ((1 << _la) & 134955010) != 0):
                     self.state = 50
                     self.expr(0)
 
@@ -508,7 +516,9 @@ class FullFormParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class SymbolContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -577,7 +587,9 @@ class FullFormParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class ContextContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -670,7 +682,7 @@ class FullFormParser ( Parser ):
                 self.state = 64
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if _la==FullFormParser.BACKQUOTE:
+                if _la==27:
                     self.state = 63
                     self.match(FullFormParser.BACKQUOTE)
 
@@ -703,7 +715,9 @@ class FullFormParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class NumberLiteralContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -803,7 +817,7 @@ class FullFormParser ( Parser ):
                 self.state = 75
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if _la==FullFormParser.MINUS:
+                if _la==19:
                     self.state = 74
                     self.match(FullFormParser.MINUS)
 
@@ -836,14 +850,14 @@ class FullFormParser ( Parser ):
                 self.state = 86
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if _la==FullFormParser.MINUS:
+                if _la==19:
                     self.state = 85
                     self.match(FullFormParser.MINUS)
 
 
                 self.state = 88
                 _la = self._input.LA(1)
-                if not(_la==FullFormParser.DecimalNumber or _la==FullFormParser.DIGITS):
+                if not(_la==14 or _la==16):
                     self._errHandler.recoverInline(self)
                 else:
                     self._errHandler.reportMatch(self)
@@ -875,7 +889,9 @@ class FullFormParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class NumberLiteralPrecisionContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -922,19 +938,19 @@ class FullFormParser ( Parser ):
             self.state = 103
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [FullFormParser.DOUBLEBACKQUOTE]:
+            if token in [26]:
                 self.enterOuterAlt(localctx, 1)
                 self.state = 97
                 self.match(FullFormParser.DOUBLEBACKQUOTE)
                 self.state = 98
                 _la = self._input.LA(1)
-                if not(_la==FullFormParser.DecimalNumber or _la==FullFormParser.DIGITS):
+                if not(_la==14 or _la==16):
                     self._errHandler.recoverInline(self)
                 else:
                     self._errHandler.reportMatch(self)
                     self.consume()
                 pass
-            elif token in [FullFormParser.BACKQUOTE]:
+            elif token in [27]:
                 self.enterOuterAlt(localctx, 2)
                 self.state = 99
                 self.match(FullFormParser.BACKQUOTE)
@@ -944,7 +960,7 @@ class FullFormParser ( Parser ):
                 if la_ == 1:
                     self.state = 100
                     _la = self._input.LA(1)
-                    if not(_la==FullFormParser.DecimalNumber or _la==FullFormParser.DIGITS):
+                    if not(_la==14 or _la==16):
                         self._errHandler.recoverInline(self)
                     else:
                         self._errHandler.reportMatch(self)
@@ -963,7 +979,9 @@ class FullFormParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class NumberLiteralExponentContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1013,10 +1031,10 @@ class FullFormParser ( Parser ):
             self.state = 107
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la==FullFormParser.PLUS or _la==FullFormParser.MINUS:
+            if _la==18 or _la==19:
                 self.state = 106
                 _la = self._input.LA(1)
-                if not(_la==FullFormParser.PLUS or _la==FullFormParser.MINUS):
+                if not(_la==18 or _la==19):
                     self._errHandler.recoverInline(self)
                 else:
                     self._errHandler.reportMatch(self)

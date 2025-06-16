@@ -343,9 +343,8 @@ class InputForm2PyAst(InputFormVisitor):
             # FIXME: if literal value is 0, this should be a the whole list,
             # e.g. [:].
             numeric_literal.value -= 1
-            node = ast.Index()
-            value = numeric_literal
-            node.value = value
+            # ast.Index now requires the indexed value in its constructor
+            node = ast.Index(numeric_literal)
         else:
             access_expression = expressionList.getChild(0)
             node = self.visit(access_expression)
