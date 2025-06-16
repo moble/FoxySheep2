@@ -14,19 +14,19 @@ InputForm: $(GEN_DIR)/InputFormParser.py $(GEN_DIR)/InputFormLexer.py
 
 #: Set up to run from source code
 check:
-	py.test pytest
+	pytest
 
 #: Set up to run from source code
 develop: FullForm InputForm
-	pip install -e .
+	python -m pip install -e .
 
 #: install FoxySheep module and fox-sheep command (see also develop)
 install: FullForm InputForm
-	python ./setup.py install
+	python -m pip install .
 
 #: remove FoxySheep module and fox-sheep command
 uninstall: FullForm InputForm
-	pip uninstall FoxySheep
+	python -m pip uninstall FoxySheep
 
 #: Run an interactive Parser session
 run: develop
