@@ -28,7 +28,7 @@ from FoxySheep.tree.pretty_printer import (
 from FoxySheep.tree import SymbolNode
 from FoxySheep.__main__ import REPL
 
-from FoxySheep.version import VERSION
+from FoxySheep.version import __version__
 
-# This ensures VERSION will appear in pydoc
-__version__ = VERSION
+# For backwards compatibility
+VERSION = __version__

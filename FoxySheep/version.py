@@ -1,3 +1,9 @@
-# This file is suitable for sourcing inside POSIX shell as
-# well as importing into Python
-VERSION="1.2.3"  # noqa
+from importlib.metadata import version, PackageNotFoundError
+
+__all__ = ["__version__"]
+
+try:
+    __version__ = version("FoxySheep")
+except PackageNotFoundError:
+    # when running from source, metadata isn’t installed yet
+    __version__ = "0.0.0"

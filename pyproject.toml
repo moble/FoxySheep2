@@ -7,7 +7,7 @@ name = "FoxySheep"
 version = "1.2.3"
 description = "Mathematica parser and translator"
 readme = "README.rst"
-requires-python = ">=3.6"
+requires-python = ">=3.8"
 license = { file = "LICENSE.txt" }
 authors = [
   { name = "Robert Jacobson" }
